@@ -1,0 +1,17 @@
+<div class="container">
+    <form (ngSubmit)="editarPersona(formulario)" #formulario="ngForm">
+        <label>Ingrese id</label>
+        <input type="text" class="form-control" name="id" [(ngModel)]="id">
+
+        <label>Ingrese mombre</label>
+        <input type="text" class="form-control" name="nombre" [(ngModel)]="nombre">
+
+        <label>Ingrese genero</label>
+        <select class="form-control" name="genero" [(ngModel)]="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otros">Otros</option>
+        </select>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+</div>

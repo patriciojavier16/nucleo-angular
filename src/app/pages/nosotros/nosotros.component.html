@@ -1,0 +1,16 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Teléfono</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of personas.results">
+        <td>{{item.name.first}}</td>
+        <td>{{item.phone}} </td>
+        <td>{{item.email}} </td>
+      </tr>
+    </tbody>
+  </table>
